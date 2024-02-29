@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calbacg"
+    tools:context=".calendarActivity3">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:outlineSpotShadowColor="@color/cardview_dark_background"
+        android:outlineAmbientShadowColor="@color/black"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <EditText
+        android:id="@+id/Addevents"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/calendarView"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:text="Add Events"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Addevents"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="25dp"
+        android:text="Save"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonSave"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="478dp"
+        tools:text="save" />
+</RelativeLayout>
